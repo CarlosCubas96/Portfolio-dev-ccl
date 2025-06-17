@@ -1,0 +1,52 @@
+---
+import portfolioLogo from "../assets/logo/logo.png";
+---
+
+<header
+  class="sticky z-[1000] w-full h-[60px] flex justify-between items-center bg-black px-[45px] py-0 top-0"
+>
+  <a href="/">
+    <img class="w-28 h-auto" src={portfolioLogo.src} alt="logo" /></a
+  >
+  
+
+  <nav class="flex flex-row gap-x-5">
+    <a href="#home">HOME</a>
+    <a href="#projects">PROYECTOS</a>
+    <a href="./experience.html" data-target="#experience">EXPERIENCIA</a>
+    <a href="#contact">CONTACTO</a>
+    <a
+      href="../assets/resources/CurriculumVitaeCarlosCubas2025New.pdf"
+      target="_blank">CV</a
+    >
+  </nav>
+  
+</header>
+
+<style>
+  nav a {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 0.3em;
+    transition: color 0.3s ease;
+    position: relative;
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    &.active {
+      color: #ffffff;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 92%;
+        height: 1px;
+        background-color: #ff7f00;
+      }
+    }
+  }
+</style>

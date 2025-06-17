@@ -1,0 +1,374 @@
+---
+import portfolioLogo from "../assets/logo/logo.png";
+
+import bannerImage from "../assets/images/banner-image-rm.png";
+
+import azureLogo from "../assets/logos/Azure.png";
+import bootstrapLogo from "../assets/logos/bootstrap.png";
+import canvaLogo from "../assets/logos/canva.png";
+import cssLogo from "../assets/logos/css.png";
+import dockerLogo from "../assets/logos/docker.png";
+import eclipseLogo from "../assets/logos/eclipse.png";
+import figmaLogo from "../assets/logos/figma.png";
+import filezillaLogo from "../assets/logos/filezilla.png";
+import gitLogo from "../assets/logos/git.png";
+import hibernateLogo from "../assets/logos/hibernate.png";
+import htmlLogo from "../assets/logos/html.png";
+import javaLogo from "../assets/logos/java.png";
+import jsLogo from "../assets/logos/js.png";
+import junitLogo from "../assets/logos/junit.png";
+import linuxLogo from "../assets/logos/linux.png";
+import mongoLogo from "../assets/logos/MongoDB.png";
+import mysqlLogo from "../assets/logos/MySQL.png";
+import npmLogo from "../assets/logos/npm.png";
+import prestashopLogo from "../assets/logos/prestashop.png";
+import springBootLogo from "../assets/logos/spring-boot.png";
+import woocommerceLogo from "../assets/logos/woocommerce.png";
+import wordpressLogo from "../assets/logos/WordPress.png";
+import webpackLogo from "../assets/logos/Webpack.png";
+---
+
+<section class="banner" id="home">
+  <div class="banner-text">
+    <h1>Carlos Cubas</h1>
+    <p class="subheading">Transformando ideas en experiencias digitales</p>
+    <small
+      >Creando ideas en interfaces intuitivas, combinando maquetación,
+      desarrollo y diseño UX/UI. Mi objetivo es que cada proyecto sea
+      visualmente atractivo y funcional.</small
+    >
+    <a
+      href="../assets/resources/CurriculumVitaeCarlosCubas2025New.pdf"
+      target="_blank"
+      class="btn"
+      >DESCARGAR CV
+      <span>→</span></a
+    >
+  </div>
+  <div class="banner-about">
+    <h2>SOBRE MÍ</h2>
+    <p>
+      Descubre más sobre mi experiencia en desarrollo frontend, maquetación y
+      diseño UX/UI. Si tienes un proyecto o una idea, estaré encantado de
+      conectar.
+    </p>
+    <a href="#" class="btn-outline">EXPLORA MÁS <span>→</span></a>
+  </div>
+</section>
+
+<section class="py-8 antialiased bg-black md:py-16">
+  <div
+    class="mx-auto grid max-w-screen-xl px-4 pb-8 md:grid-cols-12 lg:gap-12 lg:pb-16 xl:gap-0"
+  >
+    <div class="content-center justify-self-start md:col-span-7 md:text-start">
+      <h1
+        class="mb-4 text-4xl font-extrabold leading-none tracking-tight dark:text-white md:max-w-2xl md:text-5xl xl:text-6xl"
+      >
+        Limited Time Offer!<br />Up to 50% OFF!
+      </h1>
+      <p
+        class="mb-4 max-w-2xl text-gray-500 dark:text-gray-400 md:mb-12 md:text-lg mb-3 lg:mb-5 lg:text-xl"
+      >
+        Don't Wait - Limited Stock at Unbeatable Prices!
+      </p>
+      <div
+        class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
+      >
+        <a
+          href="#"
+          class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          >Get started</a
+        >
+        <a href="#" class="text-sm/6 font-semibold text-white"
+          >Learn more <span aria-hidden="true">→</span></a
+        >
+      </div>
+    </div>
+
+    <div class="hidden md:col-span-5 md:mt-0 md:flex">
+      <img class="w-100 h-auto hidden dark:block" src={bannerImage.src} />
+    </div>
+  </div>
+</section>
+
+<div class="scroll">
+  <div>
+    <img src={azureLogo.src} alt="Azure" />
+    <img src={bootstrapLogo.src} alt="Bootstrap" />
+    <img src={canvaLogo.src} alt="Canva" />
+    <img src={cssLogo.src} alt="CSS" />
+    <img src={dockerLogo.src} alt="Docker" />
+    <img src={eclipseLogo.src} alt="Eclipse IDE" />
+    <img src={figmaLogo.src} alt="Figma" />
+    <img src={filezillaLogo.src} alt="FileZilla" />
+    <img src={gitLogo.src} alt="Git" />
+    <img src={hibernateLogo.src} alt="Hibernate" />
+    <img src={htmlLogo.src} alt="HTML" />
+    <img src={javaLogo.src} alt="Java" />
+    <img src={jsLogo.src} alt="JavaScript" />
+    <img src={junitLogo.src} alt="JUnit" />
+    <img src={linuxLogo.src} alt="Linux" />
+    <img src={mongoLogo.src} alt="MongoDB" />
+    <img src={mysqlLogo.src} alt="MySQL" />
+    <img src={npmLogo.src} alt="NPM" />
+    <img src={prestashopLogo.src} alt="PrestaShop" />
+    <img src={springBootLogo.src} alt="Spring Boot" />
+    <img src={woocommerceLogo.src} alt="WooCommerce" />
+    <img src={wordpressLogo.src} alt="WordPress" />
+    <img src={webpackLogo.src} alt="Webpack" />
+  </div>
+</div>
+
+<style>
+  .banner {
+    grid-area: banner;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px 60px;
+    height: 94vh;
+    gap: 30px;
+    background-color: #000;
+    color: white;
+  }
+
+  .banner-text {
+    display: flex;
+    width: 761px;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+    padding: 100px;
+    background: url("../assets/images/banner-image-rm.png") no-repeat top
+      center/cover;
+    background-size: contain;
+  }
+
+  .banner-text h1 {
+    font-size: 40px;
+    color: #ff671f;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .banner-text .subheading {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .banner-text small {
+    font-size: 12.2px;
+    color: #9f9f9f;
+  }
+
+  .banner-text .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .banner-text .features li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 182px;
+    padding: 20px 20px;
+    background-color: #ff671f;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .btn span {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .btn:hover span {
+    transform: translateX(15px);
+  }
+
+  .banner-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 537px;
+    height: 264px;
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 90px;
+  }
+
+  .banner-about h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+
+  .banner-about p {
+    font-size: 12.2px;
+    color: #9f9f9f;
+    margin-bottom: 50px;
+  }
+
+  .btn-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    width: 182px;
+    padding: 20px 20px;
+    border: 2px solid #6a6a6a;
+    background-color: #141414;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .btn-outline span {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .btn-outline:hover span {
+    transform: translateX(15px);
+  }
+
+  .btn:hover {
+    background-color: #f54f00;
+  }
+
+  /* =========================*/
+  .scroll {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    mask-image: linear-gradient(
+      90deg,
+      #000000,
+      #000000 10%,
+      #000000 90%,
+      #000000
+    );
+  }
+
+  .carousel-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 220px;
+    margin-bottom: 50px;
+
+    & .carousel-subtitle {
+      font-size: 0.6em;
+      color: #ffffff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    & .carousel-title {
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  }
+
+  .scroll div {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: animate 40s linear infinite;
+  }
+
+  .scroll div img {
+    width: 50px;
+    margin: 0 60px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+
+  .scroll:hover div {
+    animation-play-state: paused;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-70%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .scroll-content img {
+      width: 0px;
+      margin: 0 40px;
+    }
+
+    .scroll-content {
+      animation: scroll-animation 50s linear infinite;
+    }
+  }
+
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .scroll-content img {
+      width: 40px;
+      margin: 0 25px;
+    }
+
+    .scroll-content {
+      animation: scroll-animation 45s linear infinite;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .scroll-content img {
+      width: 40px;
+      margin: 0 20px;
+    }
+
+    .scroll-content {
+      animation: scroll-animation 40s linear infinite;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .scroll-content img {
+      width: 30px;
+      margin: 0 15px;
+    }
+
+    .scroll-content {
+      animation: scroll-animation 35s linear infinite;
+    }
+  }
+</style>
